@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio-page</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/images/pinku.png" class="logo">
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Conatct</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars"onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full-Stack Devloper</p>
+                <h1>Hi, I am  <span>Pinkun</span> Palei<br>I am from India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------about------------ -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="about-text">About</h1>
+                     <p>I'm a recent graduate with a degree in Computer Science, passionate about software development and technology. I believe in continuous learning and enjoy exploring new ideas and concepts in the field.!</p>
+                     <div class="tab-titles">
+                        <p class="tab-links link-active" onclick="opentab('Skils')">Skils</p>
+                        <p class="tab-links" onclick="opentab('Exprince')">Exprince</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                     </div>
+                     <div class="tab-contents tab-active" id="Skils">
+                        <ul>
+                            <li><span>Webdevlopment</span><br>Make all website with proper responsive</li>
+                            <li><span>DSA</span><br>I solve 120qustion in leetcode using java programing language </li>
+                            <li><span>C | C++ | Python</span><br>I have  basic  idia about this language </li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="Exprince">
+                        <ul>
+                            <li><span>Internship</span><br>
+                                Software Development Engineer
+                                Code-Sumarai Tech Solutions, Summer 2024 Feb 10
+                                Collaborated with a team of developers to contribute to the design and implementation of a web-based inventory management system using HTML, CSS, and JavaScript.
+                            </li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>10th</span><br>Trilochaneswar Bidyapith - 78.57% (2016-2017)</li>
+                            <li><span>12th</span><br>Delanga HS School - 61.32% (2018-2019)</li>
+                            <li><span>BCA</span><br>Presidency College, Beharmpur - 77.77% (2021-2024)</li>
+                        </ul>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------Services------------ -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div >
+                    <i class="fa-solid fa-code"></i>
+                    <h2 class="service-title">Full-Stack developer</h2>
+                    <p>Building dynamic and interactive web applications tailored to the client's requirements using a combination of frontend and backend.Database .restful-Api,technologies.</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div >
+                    <i class="fa-brands fa-algolia"></i>
+                    <h2 class="service-title">Webdesign</h2>
+                    <p>Designing and developing user interfaces using HTML, CSS, and JavaScript frameworks like React.js, Angular, or Vue.js to create responsive and engaging experiences for users.</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div >
+                    <i class="fa-brands fa-java"></i>
+                    <h2 class="service-title">Java Dsa</h2>
+                    <p>Algorithms Design and Analysis. Problem-Solving Skills. Optimizing Code Performance</p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------portfolio--------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/WanderLust.png" alt="">
+                    <div class="layer">
+                        <h3>Social midea</h3>
+                        <p>This is Airbnb website</p>
+                        <a href="https://airbnbclone-zdfe.onrender.com/listings"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/Spotify1.png" alt="">
+                    <div class="layer">
+                        <h3>Ui/ux</h3>
+                        <p>This is Spotify clone</p>
+                        <a href="http://127.0.0.1:5501/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/leetcode.png" alt="">
+                    <div class="layer">
+                        <h3>Leetcode</h3>
+                        <p>This is my leetcode profile</p>
+                        <a href="https://leetcode.com/pinkun123/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">seemore</a>
+        </div>
+    </div>
+
+    <!-- ---------contact-------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>pinkunpalei01@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>(+91)8658305130</p>
+                    <div class="socila-media">
+                        <a href="https://github.com/Pinkun123"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/pinkun-palei-6b76aa25b/"><i class="fa-brands fa-linkedin"></i></a> 
+                        <a href="https://www.instagram.com/pinku143989/"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    <a href="./images/pinkun rusume (1).pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" placeholder="Enter Your Name" required>
+                        <input type="email" placeholder="Enter Your Gmail Id" required>
+                        <input type="text" placeholder="Enter Your Mob No" required>
+                        <textarea name="text" rows="6"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> <i class="fa-regular fa-copyright"></i> Copyright by pinkun palei</p>
+        </div>
+    </div>
+
+    <!-- ------------Java Script---------- -->
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname){
+            for(var tablink of tablinks){
+                tablink.classList.remove("link-active");
+            }
+            for(var tabcontent of tabcontents){
+                tabcontent.classList.remove("tab-active");
+            }
+            document.getElementById(tabname).classList.add("tab-active");
+        }
+    </script>
+
+    <script>
+        var sidemenu=document.getElementById("side-menu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
